@@ -63,7 +63,6 @@
             /* we can make .inner position absolute within .outer now that.. */
             /* position: relative was set on parent (.outer) */
             position: absolute;
-            top: 600px;
             left: 50%;
             /* translateX used in combination with left to center .inner */
             /* translateY used to position .inner 50% above its height.. */
@@ -74,6 +73,30 @@
             height: 50%;
             background-color: white;
         }
+        
+        @media  (max-width: 768px) {
+        .inner {
+          top: 750px;
+        }
+
+
+      }
+
+        @media (min-width: 768px){
+        .inner {
+            top: 800px;
+        }
+
+        }
+
+
+
+
+        @media (min-width: 1280px) and (max-width: 1600px){
+        .inner {
+            top: 600px;
+        }
+      }
     </style>
     
 </head>
@@ -173,7 +196,7 @@
 
         
         <!-- Copyright -->
-        <div class="copyright">
+        <div class="copyright" style="margin-top: 400px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
