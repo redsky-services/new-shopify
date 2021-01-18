@@ -62,7 +62,7 @@
             /* we can make .inner position absolute within .outer now that.. */
             /* position: relative was set on parent (.outer) */
             position: absolute;
-            top: 650px;
+            
             left: 50%;
             /* translateX used in combination with left to center .inner */
             /* translateY used to position .inner 50% above its height.. */
@@ -73,6 +73,45 @@
             height: 50%;
             background-color: white;
         }
+        
+                 @media  (max-width: 768px) {
+        .inner {
+          top: 750px;
+        }
+
+        .copyright
+        {
+            margin-top: 1000px;
+            
+            }
+      }
+
+        @media (min-width: 768px){
+        .inner {
+            top: 800px;
+        }
+
+        .copyright
+        {
+            margin-top: 1000px;
+            
+            }
+        }
+
+
+
+
+        @media (min-width: 1280px) and (max-width: 1600px){
+        .inner {
+            top: 600px;
+        }
+        .copyright
+        {
+            margin-top: 700px;
+            
+            }
+      }
+        
     </style>
 
 </head>
@@ -260,7 +299,7 @@
         <!-- end of details lightboxes -->
 
         <!-- Copyright -->
-        <div class="copyright" style="margin-top: 800px;">
+        <div class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
