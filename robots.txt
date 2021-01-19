@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /connect
+Disallow: /confirm-submission
+
+
+User-agent: *
+Disallow: /connect
+Disallow: /confirm-submission
+
+Crawl-delay: 5
+Disallow: /cgi-bin/
+Sitemap: https://shopify-lens.com/sitemap.xml
