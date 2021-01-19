@@ -1,4 +1,7 @@
+ErrorDocument 404 /https://shopify-lens.com/not-found-page
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
